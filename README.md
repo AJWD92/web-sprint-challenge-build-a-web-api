@@ -61,10 +61,13 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. The core features of Node.js and Express and why they are useful.
-1. Understand and explain the use of Middleware?
+NodeJs is an asynchronous & Event driven library. It is very fast due to it's compact size. It is a single thread process but still highly scalable and there is no buffering
+1. Understand and explain the use of Middleware? Middleware serves many functions rather custom middleware written by the dev,error middleware or 3rd party middleware it helps make cleaner concise code by creating or using a specific function for that purpose.
 1. The basic principles of the REST architectural style.
+it is a client-server model it is stateless it is cacheable has a Uniform interface and has a layered system
 1. Understand and explain the use of Express Routers.
-1. Describe tooling used to manually test the correctness of an API.
+it is used to make sure navigates a path & method request a execute a desired logic  based off its path and cb
+1. Describe tooling used to manually test the correctness of an API. We make sure the correct HTTP status code is rendered the make sure the res payload is right then check the headers after that make sure the app state is right and finally do a sanity check
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -72,12 +75,12 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 ### Task 1: Project Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
-- [ ] Push commits: git push origin `<firstName-lastName>`
+- [ x ] Create a forked copy of this project
+- [ x ] Add your team lead as collaborator on Github
+- [ x ] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [ x ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [ x ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [ x ] Push commits: git push origin `<firstName-lastName>`
 
 ### Task 2: Project Requirements
 
