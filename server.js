@@ -1,5 +1,7 @@
 const express = require('express');
 
+const projectsRouter = require('./routes/projectsRouter');
+const actionsRouter = require('./routes/actionsRouter');
 const helmet = require('helmet');
 
 const server = express();
@@ -13,5 +15,9 @@ server.get('/', (req, res) => {
         message: 'The server is online'
     });
 });
+
+server.use('/api/projects', projectsRouter);
+server.use('/api/projects', actionsRouter);
+server.use('/api/projects/:id', actionsRouter);
 
 module.exports = server;
